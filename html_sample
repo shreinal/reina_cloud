@@ -1,469 +1,77 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">  
-<html lang="ko">  
-<head>  
-<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">  
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="keywords" content="sk, skt, 텔레콤, 티월드, T world, 요금제, 상품, LTE, 음성 무제한, 데이터 무제한, LTE요금, 인터넷, 결합상품, 요금 변경, 로밍상품, 로밍요금, band데이터, band요금, 주말엔팅, 데이터, 무제한, 티비끼리, TB끼리, 온가족 무료, 시그니처, T시그니처, T끼리 맞춤형, 뉴 T끼리 맞춤형, T Tab, 밴드데이터, 밴드요금, 결합할인, 태블릿, 맞춤형, 내게 맞는 요금제, 피처폰, 척척할인, 가족나눔, 휴대폰결제 안심통보, 내폰끼리, 안심옵션, 컬러링, 벨소리, 데이터쿠폰, IPTV, 부가서비스, t데이터"><!-- 180321 수정_01 -->
-<meta name="description" content="T world에서 제공하는 고객 맞춤 상품 서비스, 요금상품 추천, 테마별 고객 맞춤 요금제, T Apps">
-<title>상품 | T world</title>  
-<link href="/poc/inc/css/common.css" rel="stylesheet" type="text/css">  
-<link href="/poc/inc/css/product_main.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="/poc/inc/js/lib/jquery.min.js"></script>  
-<script type="text/javascript" src="/poc/inc/js/lib/libs.js"></script>  
-<script type="text/javascript" src="/poc/inc/js/common/common.js"></script>  
-<!-- select box 관련 -->  
-<script type="text/javascript" src="/poc/inc/js/lib/jquery.mousewheel.js"></script>  
-<script type="text/javascript" src="/poc/inc/js/lib/jquery.jscrollpane.min.js"></script>  
-<script type="text/javascript" src="/poc/inc/js/lib/wddo.selectbox-1.5.4.js"></script>
-<script type="text/javascript" charset="utf-8" src="/poc/gnb/inc/cmn/poc_gnb_banner.js"></script>
-<script type="text/javascript" charset="utf-8" src="/poc/gnb/inc/cmn/poc_main_banner.js"></script>
-<script type="text/javascript">  
-	$.SelectBoxSet('.selectBox > select', {height:200, scrollHeight:200-8});
-</script>  
-<!-- //select box 관련 -->
-<script type="text/javascript">
-	//레이어 닫기
-	function layerCancel(){
-		$(".popClose").trigger("click");
-	}
-	
-	$(document).ready(function() {
-
-	});
-</script>  
-</head>  
-  
+<!-- This example will demonstare converting a basic URL with pid and campaign to OneLink URL -->
+<!-- The calling URL should be: https://liaz-af.github.io/af-onelink-smart-script/examples/basic_url.html?af_c=gogo&af_pid=email -->
+<!-- The expected OneLink URL: https://engmntqa.onelink.me/LtRd/?pid=email&c=gogo&af_js_web=true -->
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- import the webpage's stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+</head>
 <body>
-<div class="accessbility"><a href="#content">본문 바로가기</a></div>
-<!-- wrap -->
-<div id="wrap">
-	<!-- header -->
-	<div id="header">
-	</div>
-	<!-- //header -->
-	<hr>
-	<!-- container -->
-	<div id="container">
-		<!-- content -->
-		<div id="content" class="sm">
-			<h1 class="hidden">상품</h1>
-			
-			<!-- promotion slide -->
-			<div class="promotionSlide">
-				<h2 class="hidden">프로모션</h2>
-				<div class="slideBox fullSize">
-					<!-- admin 등록 영역 -->
-					<div class="slideNavi2 col6"> <!-- 메뉴갯수에 따라 col2 ~ col6 -->
-						<button type="button" class="btnPause">일시정지</button>
-						<button type="button" class="btnPlay" style="display:none">재생</button>
-						<ul>
+  <div class="row">
+    <div class="column">
+      <img src="https://massets.appsflyer.com/wp-content/uploads/2019/10/26232810/OneLink-logo.png" alt="AppsFlyer logo">
+    </div>
+  </div>
 
-						</ul>
-					</div>
-					<!-- //admin 등록 영역 -->
-					<div class="m_slideCon" id="_banner_1004_F">
-						<!-- admin 등록 영역 -->
-
-						<!-- //admin 등록 영역 -->
-					</div>
-					<button type="button" class="btnPrev">이전</button>
-					<button type="button" class="btnNext">다음</button>
-				</div>
-			</div>
-			<!-- //promotion slide -->
-			<!-- //프로모션 영역 -->
-		
-			<!-- 상품서비스 써머리 영역 -->
-			<div class="prod_main1">
-				<h2 class="hidden">상품서비스 summary</h2>
-				<div class="inner">
-					<div id="srch_product" class="category_type1"> <!-- category_type1, category_type2, category_type3 -->
-						<div class="selArea">
-							<span class="hidden">키보드 방향키로 목록 선택</span>
-							<!-- 191104 추가_01 -->
-							<div class="inSelect">
-								<a href="#" class="prod_tit" title="상품서비스"><span><em>요금상품</em>을</span></a>
-								<!-- 191104 수정_01 -->
-								<ul class="prod_list">
-									<li class="on"><a href="#" data-val="category_type1" title="요금상품을 선택"><span><em>요금상품</em>을</span></a></li>
-									<li><a href="#" data-val="category_type2" title="부가서비스를 선택"><span><em>부가서비스</em>를</span></a></li>
-									<li><a href="#" data-val="category_type3" title="T apps를 선택"><span><em>T apps</em>를</span></a></li>
-								</ul>
-							</div>
-							<span><em>찾고</em>계신가요?</span>
-						</div>
-
-						<!-- 요금상품 -->
-						<div class="sel_type1">
-							<dl class="prod_ban" id="_banner_1016_F">
-							<div><dt>SKT에서<br><span>제일 <em>잘</em> 나가는</span><br>상품입니다.</dt><dd><a href="/tglink.jsp?urlname=wTG_3554"><img src="/poc/img/product/img_prod_main_9.png" alt="모바일 BEST - T플랜 맥스 LTE 라이프의 완성! 막강한 데이터&amp;콘텐츠 혜택 무제한"></a><a href="/tglink.jsp?urlname=wTG_3967"><img src="/adminupload/common/17510/86918/1652363628.png" alt="IPTV BEST - B tv All B tv 모든 채널을 시청할 수 있는 대표 상품 VOD16만 채널253개"></a></dd></div>
-</dl>
-						</div>
-
-						<!-- 부가서비스 -->
-						<div class="sel_type2">
-							<dl class="prod_ban" id="_banner_1017_F">
-							<div><dt>SKT에서<br><span>제일 <em>잘</em> 나가는</span><br>상품입니다.</dt><dd><a href="http://www.tworld.co.kr/tglink.jsp?urlname=wTG_2320"><img src="/adminupload/common/16026/64375/330288507.png" alt="콘텐츠 관련 BEST - 원스토리 앤 데이터_신청 원스토리 전용데이터 제공 월 3GB 제공 + 원스토리 패스 무제한 이용권 혜택"></a><a href="http://www.tworld.co.kr/tglink.jsp?urlname=wTG_2801"><img src="/adminupload/common/16026/64375/1296096168.png" alt="데이터 관련 BEST - EBS 데이터팩(청소년) EBS 전용 데이터 제공 EBS 전용 데이터 하루 2GB 제공 (다 쓴 후에도 최대 3Mbps 속도로 무제한 이용)"></a></dd></div>
-</dl>
-						</div>
-
-						<!-- Tapps -->
-						<div class="sel_type3">
-							<dl class="prod_ban" id="_banner_1018_F">
-							<div><dt>SKT에서<br><span>제일 <em>잘</em> 나가는</span><br>상품입니다.</dt><dd><a href="http://www.tworld.co.kr/tglink.jsp?urlname=wTG_4519"><img src="/adminupload/common/17510/86918/955618899.png" alt="편의 BEST - TMAP 1,900만 명이 사용하는 국내 1위 모빌리티 서비스! 실시간 빠른길, 운전습관 분석도 제공"></a><a href="http://www.tworld.co.kr/tglink.jsp?urlname=wTG_2329"><img src="/uploads/poc/11136/07068/9CCB3B9B3E584399A358A1E1FA3B19CA.png" alt="라이프스타일 BEST - SK pay T멤버십을 더 편리하게, 결제까지 한 번에 간편인증 + 추가할인 + 이용내역 조회"></a></dd></div>
-</dl>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- //상품서비스 써머리 영역 -->
-			
-	<!-- 모바일라이프 영역 -->
-			<div class="prod_main2">
-				<h2 class="hidden">모바일 라이프</h2>
-				<div class="wrapper"> <!-- 파워유저:fromLeft, 알뜰유저:fromRight -->
-					<div class="slide_bg"></div>
-					<div class="inner">
-						<div class="phone">
-							<!-- 선택화면 일때 -->
-							<p class="default">고객님의<br><span class="s01"><strong>모바일<br>라이프</strong>는</span><span class="s02">어떠신가요?</span></p>
-
-							<!-- 알뜰 유저일때 -->
-							<p class="alUser "><span class="ico"></span><span class="txt01"><strong>알뜰</strong>유저</span><span class="txt02"><strong>관심</strong>상품</span><span class="txt03">입니다</span></p>
-
-							<!-- 파워 유저일때 -->
-							<p class="powUser "><span class="ico"></span><span class="txt01"><strong>파워</strong>유저</span><span class="txt02"><strong>관심</strong>상품</span><span class="txt03">입니다</span></p>
-						</div>
-						<div class="contSec left" data-dir="fromLeft"> <!-- 마우스오버시 on 추가 -->
-							<a href="#">프리미엄 혜택을 누리는 <span class="ltxt"><strong>파워유저</strong> 입니다.</span><span class="arrow"><span class="ico"></span></span></a>
-							<div class="detail">
-								<ul>
-									<li class="ct01">
-										<dl>
-											<dt>5GX<br>플래티넘</dt>
-											<dd>5G 데이터로<br> 더 빠르고 더 다양하게</dd>
-										</dl>
-										<a href="/tglink.jsp?urlname=wTG_3555">자세히 보기</a>
-									</li>
-									<li class="ct02">
-										<dl>
-											<dt>wavve 앤<br>데이터 플러스</dt>
-											<dd>지상파 실시간(PC/모바일)<br> 시청 2회선 무료</dd>
-										</dl>
-										<a href="/tglink.jsp?urlname=wTG_3556">자세히 보기</a>
-									</li>
-									<li class="ct03">
-										<dl>
-											<dt>5G 스마트워치<br>TAB할인</dt>
-											<dd>동일 명의 스마트 워치 2회선<br> 이용요금 100% 할인</dd>
-										</dl>
-										<a href="/tglink.jsp?urlname=wTG_3557">자세히 보기</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<div class="contSec right" data-dir="fromRight"> <!-- 마우스오버시 on 추가 -->
-							<a href="#">알뜰한 생활 밀착형 <span class="ltxt"><strong>알뜰유저</strong> 입니다.</span><span class="arrow"><span class="ico"></span></span></a>
-							<div class="detail">
-								<ul>
-									<li class="ct01">
-										<dl>
-											<dt>T플랜 에센스</dt>
-											<dd>쓰고 또 써도 걱정 없는<br> 데이터 100GB 제공</dd>
-										</dl>
-										<a href="/tglink.jsp?urlname=wTG_3558">자세히 보기</a>
-									</li>
-									<li class="ct02">
-										<dl>
-											<dt>FLO 앤 데이터</dt>
-											<dd>FLO 전용 데이터로<br> 콘텐츠 무제한 이용</dd>
-										</dl>
-										<a href="/tglink.jsp?urlname=wTG_3559">자세히 보기</a>
-									</li>
-									<!-- 190531 수정_01 -->
-									<li class="ct03">
-										<dl>
-											<dt>T가족모아데이터</dt>
-											<dd>T가족모아데이터를 통해<br> 데이터 공유</dd>
-										</dl>
-										<a href="/tglink.jsp?urlname=wTG_3697">자세히 보기</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-
-						</div>
-					</div>
-
-				</div>
-			</div>
-			<!-- //모바일라이프 영역 -->
-			
-			<!-- SKT 추천 영역 -->
-			<div class="prod_main3">
-				<h2 class="hidden">SKT 추천</h2>
-				<div class="inner">
-					<h3><strong>늘</strong> 데이터가 <strong>부족</strong>하신가요?<em>해결방법을 알려드립니다.</em></h3>
-					<ul class="prod_tab">
-						<li class="on"> <!-- 클릭및활성시 class="on" 추가 -->
-							<a href="#" class="prod_menu1"><span class="hidden">01 부가서비스 테이터 활용하기 선택</span></a>
-							<ul class="prod_cont1">
-								<li><a href="http://www.tworld.co.kr/tglink.jsp?urlname=wTG_3560">
-									<em></em>
-									<strong>FLO 앤 데이터</strong>
-									<span>FLO 전용 데이터로<br> 콘텐츠 무제한 이용</span>
-								</a></li>
-								<li><a href="http://www.tworld.co.kr/tglink.jsp?urlname=wTG_2338">
-									<em></em>
-									<strong>LTE 안심옵션</strong>
-									<span>기본데이터를 소진한 후 요금부담<br>없이 웹서핑/이메일 이용 가능</span>
-								</a></li>
-								<li><a href="http://www.tworld.co.kr/tglink.jsp?urlname=wTG_2337">
-									<em></em>
-									<strong>가족나눔데이터</strong>
-									<span>가족이 결합하면<br>최고 1,000MB추가 제공</span>
-								</a></li>
-							</ul>
-						</li>
-						<li> <!-- 클릭및활성시 class="on" 추가 -->
-							<a href="#" class="prod_menu2"><span class="hidden">02 놓치고 있는 혜택 이용하기</span></a>
-							<ul class="prod_cont2">
-								<li><a href="http://www.tworld.co.kr/tglink.jsp?urlname=wTG_2788">
-									<em></em>
-									<strong>T가족모아데이터</strong>
-									<span>가족을 위한 데이터 새로고침</span>
-								</a></li>
-								<li><a href="http://www.tworld.co.kr/tglink.jsp?urlname=wTG_2340">
-									<em></em>
-									<strong>데이터/음성 리필하기</strong>
-									<span>SK텔레콤 2년 이상 사용 시<br>무료 쿠폰 제공</span>
-								</a></li>
-								<li><a href="http://www.tworld.co.kr/tglink.jsp?urlname=wTG_4689">
-									<em></em>
-									<strong>데이터 선물하기</strong>
-									<span>가족 · 친구 · 연인에게 데이터를 <br>선물하는 서비스</span>
-								</a></li>
-							</ul>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<!-- //SKT 추천 영역 -->
-			
-			<!-- 결합상품 안내 영역 -->
-			<div class="prod_main4">
-				<h2 class="hidden">결합상품 안내</h2>
-				<div class="inner">
-					<h3><strong>결합</strong>하고 <strong>할인</strong>도 받으세요.</h3>
-					<ul class="prod_box">
-						<li id="srch_single" class="type1"> <!-- type1, type2 -->
-							<h4><img src="/poc/img/product/stit_prod_main4_1.png" alt="혼자서 결합"></h4>
-							<div class="selArea">
-								<span>이동전화 플러스</span>
-								<span class="hidden">키보드 방향키로 목록 선택</span>
-								<!-- 191104 추가_02 -->
-								<div class="inSelect">
-									<a href="#" class="prod_tit" title="결합상품">인터넷</a>
-									<!-- 191104 수정_02 -->
-									<ul class="prod_list">
-										<li class="on"><a href="#" data-val="type1" title="인터넷 선택">인터넷</a></li>
-										<li><a href="#" data-val="type2" title="IPTV 선택">IPTV</a></li>
-									</ul>
-								</div>
-							</div>
-							<!-- 인터넷 -->
-							<div class="info_prod type1">
-								<p class="prod_price"><em>월</em> 8,800<span>원 할인</span></p>
-								<p class="prod_txt">이동전화와 인터넷을 묶으면 인터넷 기본료 8,800원 할인</p>
-								<a href="http://www.tworld.co.kr/tglink.jsp?urlname=wTG_2342" class="prod_link"><span>한가족할인</span></a>
-							</div>
-
-							<!-- IPTV -->
-							<div class="info_prod type2">
-								<p class="prod_price"><em>월</em> 2,200<span>원 할인</span></p>
-								<p class="prod_txt">이동전화 월정액 1,100원 할인 + IPTV 기본료 1,100원 할인</p>
-								<a href="http://www.tworld.co.kr/tglink.jsp?urlname=wTG_2343" class="prod_link"><span>TB끼리 TV플러스</span></a>
-							</div>
-						</li>
-						<li id="srch_family" class="type3"> <!-- type3, type4, type5 , type6 -->
-							<h4><img src="/poc/img/product/stit_prod_main4_2.png" alt="가족끼리 결합"></h4>
-							<div class="selArea">
-								<span>인터넷 플러스</span>
-								<span class="hidden">키보드 방향키로 목록 선택</span>
-								<!-- 191104 추가_03 -->
-								<div class="inSelect">
-									<a href="#" class="prod_tit" title="결합회선">1회선</a>
-									<!-- 191104 수정_03 -->
-									<ul class="prod_list">
-										<li class="on"><a href="#" data-val="type3" title="1회선 선택">1회선</a></li>
-										<li><a href="#" data-val="type4" title="2회선 선택">2회선</a></li>
-										<li><a href="#" data-val="type5" title="3회선 선택">3회선</a></li>
-										<li><a href="#" data-val="type6" title="4회선 선택">4회선</a></li>
-									</ul>
-								</div>
-							</div>
-							<!-- 1회선 -->
-							<div class="info_prod type3">
-								<p class="prod_price"><em>월</em> 11,000<span>원 할인</span></p>
-								<p class="prod_txt">이동전화 월정액 3,300원 할인 + 인터넷 기본료 7,700원 할인 <span>플러스 추가혜택</span></p>
-								<a href="http://www.tworld.co.kr/tglink.jsp?urlname=wTG_2344" class="prod_link"><span>TB끼리 온가족프리</span></a>
-							</div>
-
-							<!-- 2회선 -->
-							<div class="info_prod type4">
-								<p class="prod_price"><em>월</em> 12,100<span>원 할인</span></p>
-								<p class="prod_txt">이동전화 월정액 3,300원 할인 + 인터넷 기본료 8,800원 할인 <span>플러스 추가혜택</span></p>
-								<a href="http://www.tworld.co.kr/tglink.jsp?urlname=wTG_2344" class="prod_link"><span>TB끼리 온가족프리</span></a>
-							</div>
-
-							<!-- 3회선 -->
-							<div class="info_prod type5">
-								<p class="prod_price"><em>월</em> 13,200<span>원 할인</span></p>
-								<p class="prod_txt">이동전화 월정액 3,300원 할인 + 인터넷 기본료 9,900원 할인 <span>플러스 추가혜택</span></p>
-								<a href="http://www.tworld.co.kr/tglink.jsp?urlname=wTG_2344" class="prod_link"><span>TB끼리 온가족프리</span></a>
-							</div>
-
-							<!-- 4회선 -->
-							<div class="info_prod type6">
-								<p class="prod_price"><em>월</em> 14,300<span>원 할인</span></p>
-								<p class="prod_txt">이동전화 월정액 3,300원 할인 + 인터넷 기본료 11,000원 할인 <span>플러스 추가혜택</span></p>
-								<a href="http://www.tworld.co.kr/tglink.jsp?urlname=wTG_2344" class="prod_link"><span>TB끼리 온가족프리</span></a>
-							</div>
-						</li>
-					</ul>
-					<p class="info_txt">(부가세 포함된 금액 입니다.)</p>
-				</div>
-			</div>
-			<!-- //결합상품 안내 영역 -->
-			
-			<!-- 200630 [OP002-9284] 추가 -->
-			<!-- 프로모션 배너 -->
-			<div class="prod_main_promoBanner" style="background-color:#e3f6f4">
-				<div class="inner">
-					<a href="#tsBannerOnestop" class="id_layerOpen"><img src="/poc/img/product/banner_onestop.jpg" alt="인터넷 &middot; 유료방송 가입과 해지를 한번에! 결합상품 원스톱 전환서비스 이제 이동할 사업자에게 가입 신청하실 때 기존 서비스의 해지도 한 번에 처리하실 수 있습니다.2020년 7월 시행(시범서비스기간 : 7월 1일 ~ 7월 25일)"></a>
-				</div>
-			</div>
-			<!-- //프로모션 배너 -->
-			<!-- //200630 [OP002-9284] 추가 -->
-			
-			<!-- 190129 바로가기 영역 수정 [s] -->
-			<!-- 190117 바로가기 영역 [s] -->
-			<!-- 고도화 Look 변경_수정 (한눈에 보기 메뉴 수정) -->
-			<div class="prod_main5">
-				<h2 class="hidden">상품서비스 한눈에 보기</h2>
-				<div class="inner">
-					<dl class="col5">
-						<dt>
-							<strong><span class="fBd">상품서비스</span><br>한눈에 보기</strong>
-							<a href="/tglink.jsp?urlname=wTG_2346" class="btnS btnWhite">알뜰폰 브랜드 보기</a>
-							<a href="/tglink.jsp?urlname=wTG_3123" target="_blank" title="새창" class="btnS btnWhite">0한동 바로가기</a>
-						</dt>
-						<dd>
-							<ul>
-								<li>
-									<a href="/tglink.jsp?urlname=wTG_2347" class="prod_tit">요금제</a>
-									<a href="/tglink.jsp?urlname=wTG_2358" class="prod_tit" style="margin-top:99px;">부가서비스</a>
-								</li>
-								<li>
-									<a href="/tglink.jsp?urlname=wTG_3337" class="prod_tit">인터넷/전화/IPTV/보안</a>
-									<a href="/tglink.jsp?urlname=wTG_2353">인터넷</a>
-									<a href="/tglink.jsp?urlname=wTG_2355">집전화/인터넷전화</a>
-									<a href="/tglink.jsp?urlname=wTG_2354">IPTV</a>
-									<a href="/tglink.jsp?urlname=wTG_4756">캡스홈(가정용)</a>
-									<a href="/tglink.jsp?urlname=wTG_4757">T안심보안(매장용)</a>
-									<a href="/tglink.jsp?urlname=wTG_2357" class="prod_tit h20">로밍</a>
-								</li>
-								<li>
-									<a href="/tglink.jsp?urlname=wTG_2356" class="prod_tit">결합상품</a>
-									<a href="/tglink.jsp?urlname=wTG_2378" class="prod_tit h20">스마트홈</a>
-									<a href="/tglink.jsp?urlname=wTG_2379">스마트홈 서비스</a>
-									<a href="/tglink.jsp?urlname=wTG_4249">요금안내</a>
-									<a href="/tglink.jsp?urlname=wTG_2381">스마트홈 가전</a>
-									<a href="/tglink.jsp?urlname=wTG_2382">스마트홈 아파트</a>
-								</li>
-								<li>
-									<a href="/tglink.jsp?urlname=wTG_2388" class="prod_tit">모바일전용서비스</a>
-									<a href="/tglink.jsp?urlname=wTG_2389">컬러링/벨소리</a>
-									<a href="/tglink.jsp?urlname=wTG_2390">T apps</a>
-								</li>
-							</ul>
-						</dd>
-					</dl>
-				</div>
-			</div>
-			<!-- //고도화 Look 변경_수정 (한눈에 보기 메뉴 수정) -->
-			<!-- //190117 바로가기 영역 [e] -->
-			<!-- //190129 바로가기 영역 수정 [e] -->
-
-		</div>
-		<!-- //content -->
-	</div>
-	<!-- //container -->
-	<hr>
-	<!-- footer -->
-	<div id="footer">
-		<div class="f_con"><img src="/poc/img/tmp/tmp_footer.gif" alt="임시 FOOTER 이미지"></div>
-	</div>
-	<!-- //footer -->
+  <h1 class="primary-heading">
+    OneLink Smart Script
+  </h1>
+  <h2 class="secondary-heading">
+    Basic URL Demo
+  </h2>
+    <div class="stores-wrapper">
+      <a id="ios_link" href="https://apps.apple.com/us/app/my-device-id-by-appsflyer/id1192323960">
+          <img class="appstore-image" alt="app store link" >
+      </a>
+      
+      <a id="andrd_link" class="appstore-image" href="https://play.google.com/store/apps/details?id=com.appsflyer.android.deviceid">
+          <img alt="play store link">
+      </a>
+    </div>
+<div class="url-container">
+  <div class="input_url-container">
+    <h2>Input URL</h2>
+    <textarea id="input_url" class="present_url">
+      No input URL
+    </textarea>
+  </div>
+  <div class="output_url-container">
+    <h2>Output URL</h2>
+    <textarea id="output_url" class="present_url">
+      No output from script
+    </textarea>
+  </div>
 </div>
-<!-- //wrap -->
+  <script type="text/javascript" src="/scripts/onelink-smart-script.js"></script>
+  <script type="text/javascript">
+    window.onload = function () {
+      document.getElementById('input_url').innerHTML = window.location.href;
+      //Initializing Smart Script arguments
+      var oneLinkURL = "https://engmntqa.onelink.me/LtRd/";
+      var mediaSource = {keys: ["inmedia", "utm_source"]};
+      var campaign = {keys: ["incmp", "utm_campaign"]};
 
-<!-- 200630 [OP002-9284] 프로모션배너_원스톱 전환서비스 레이어 팝업 -->
-<div class="layerPop1 w1000" id="tsBannerOnestop">
-	<h2 class="popHead">유선 원스톱 전환 서비스</h2>
-	<div class="popCon scroll" tabindex="0">
-		<img src="/poc/img/product/img_ts_onestop_01.jpg" alt="">
-		<img src="/poc/img/product/img_ts_onestop_02.jpg" alt="">
-		<img src="/poc/img/product/img_ts_onestop_03.jpg" alt="">
-		<div class="hidden">
-			<p>
-				2020년 7월 '유선 원스톱 전환 서비스' 
-				출시 인터넷 유료방송 가입과 해지를 한번에! 
-				서비스명 : 유선 원스톱 전환 서비스,
-				출시일 : 2020년 7월 1일 (7월 1일~25일일은 시범 서비스 기간), 
-				대상 : 초고속 인터넷 및 결합판매 서비스(IPTV, 위성방송) 중 4회선 이하 서비스, 
-				상세내용 : SK텔레콤 서비스를 가입하면서 원스톱 전환 서비스로 기존 서비스 해지 처리를 요청하고, 
-				해지확인 전화 한 번만 받으면 가입과 해지가 끝,
-				문의 : 전국 T world 매장, 유선 고객센터(1600-2000번)
-			</p>
-			<p>
-				원스톱 전화 서비스, 어떻게 이용하나요?
-				1. SK텔레콤 초고속인터넷 및 유료방송 결합상품 가입 시 기존 서비스를 해지할 때 이용할 수 있습니다.
-				2. 기존에 사용하시던 인터넷 및 유료방송 결합상품 해지를 위하여 원스톱 전환 서비스를 신청하세요.
-				3. 기존 통신가에서 해지확인 전화를 받으세요.
-				4. 이제 SK텔레콤의 초고속인터넷 및 유료방송 결합상품을 사용하시면 됩니다.
-			</p>
-			<p>
-				이런 분들께 추천해요!
-				유선 해지가 번거로운 박00 고객님
-				유선은 가입과 해지를 따로 해야 해서 불편해요
-				인터넷 옮기고는 싶은데, 해지하고 가입하는게 너무 귀찮아서 나중에 할래요
-				&rarr; 유선 원스톱 전환 서비스로 가입과 동시에 기존 상품 해지 가능!
+      //Calling the function after embedding the code will be through a global parameter on the window object called window.AF_SMART_SCRIPT
+      //Onelink URL is generated
+      var result = window.AF_SMART_SCRIPT.generateOneLinkURL({
+        oneLinkURL,
+        afParameters:{
+          mediaSource: mediaSource,
+          campaign: campaign,
+        }
+      })
 
-				유선 해지 누락이나 해지 만류가 불편한 김00 고객님
-				해지하기로 이미 마음을 정했는데 해지를 만류하는 말을 듣고 싶지 않아요
-				갈아탔는데 해지하는 것을 깜빡해서 두달이나 요금이 두배로 나갔어요
-				&rarr; 개통 후 바로 해지할 수 있어서 안심, 불필요한 설명 들을 필요 없어 간편!
-			</p>
-		</div>
-	</div>
-	<button type="button" class="popClose">닫기</button>
-</div>
-<!-- // 200630 [OP002-9284] 프로모션배너_원스톱 전환서비스 레이어 팝업 -->
-
-<!-- GNB Control -->
-<link href="/poc/gnb/inc/css/gnb.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="/poc/gnb/inc/js/jquery.gnb.js"></script>
-<script type="text/javascript" charset="euc-kr" src="/poc/gnb/inc/js/gnb.js"></script>
-<script type="text/javascript" charset="euc-kr" src="/poc/gnb/inc/cmn/gnb_cmn.js"></script>
-<script type="text/javascript" charset="euc-kr" src="/poc/gnb/inc/cmn/common_url.js"></script>
-<script type="text/javascript" charset="euc-kr" src="/poc/inc/js/cmn/common_twd.js"></script><!--  ==> 이 라인은 티월드/로밍/이벤트만 추가 -->
-<script type="text/javascript">
-	gnbJquery.GNB.init( 'TWD' ,'u1', '', 'ALL');
-</script>
-
-<!-- product -->
-<script type="text/javascript" src="/poc/inc/js/common/product.js"></script>
+      if (url) {
+            document.getElementById('andrd_link').setAttribute('href', url);
+            document.getElementById('ios_link').setAttribute('href', url);
+            document.getElementById('output_url').innerHTML = url;
+      }
+    };
+  </script>
+</body>
 
 </body>
 </html>
+ 
